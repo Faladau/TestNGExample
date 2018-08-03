@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MobileSV]">
+  <parameter name="app" value="https://www.softvision.com"/>
+  <parameter name="platform" value="mobile"/>
+  <test thread-count="5" name="automationPractice(failed)">
+    <classes>
+      <class name="test.sv.ContactPageTest">
+        <methods>
+          <include name="validContactPageTest"/>
+          <include name="tearDown"/>
+          <include name="intializa"/>
+          <include name="getParam"/>
+        </methods>
+      </class> <!-- test.sv.ContactPageTest -->
+    </classes>
+  </test> <!-- automationPractice(failed) -->
+</suite> <!-- Failed suite [MobileSV] -->

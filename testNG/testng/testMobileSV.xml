@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MobileSV">
+	<parameter name="platform" value="mobile" />
+	<parameter name="app" value="https://www.softvision.com" />
+	<test name="automationPractice">
+		<packages>
+			<package name="test.sv"/>
+		</packages>
+	</test>
+</suite>

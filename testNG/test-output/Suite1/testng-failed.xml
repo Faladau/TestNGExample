@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="app" value="http://automationpractice.com/index.php"/>
+  <parameter name="platform" value="desktop"/>
+  <test thread-count="5" name="automationPractice(failed)">
+    <classes>
+      <class name="test.automation.HomeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="intializa"/>
+          <include name="vaidHomePage"/>
+          <include name="getParam"/>
+        </methods>
+      </class> <!-- test.automation.HomeTest -->
+      <class name="test.automation.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="invalidLoginTest"/>
+          <include name="validLoginTest"/>
+          <include name="intializa"/>
+          <include name="getParam"/>
+        </methods>
+      </class> <!-- test.automation.LoginTest -->
+    </classes>
+  </test> <!-- automationPractice(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
